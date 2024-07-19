@@ -30,8 +30,6 @@ header {
 
 nav {
     text-align: right;
-    /* display: flex;
-    justify-content: right; */
 }
 
 ul li {
@@ -44,8 +42,6 @@ ul li {
 a {
     color: whitesmoke;
     text-decoration: none;
-   /*  display: flexbox;
-    justify-content; */
 }
 
 /* a:visited {
@@ -72,43 +68,23 @@ h1 {
     display: inline-block;
     font-size: 600%;
     font-weight: 500;
-    /* padding-left: 80px;
-    padding-top: 100px; */
     text-align: center;
 }
 
 h2 {
     font-size: 60px;
     font-weight: 300;
-    /* padding-top: 100px;
-    padding-left: 230px; */
 }
 
 h3{
     font-size: 25px;
     font-weight: 600;
-    /* padding-left: 230px; */
 }
 
-/* p {
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px; 
-    padding: 50px;
-} */
 
 
 
 /* Home */
-/* .pUno {
-    text-align: right;
-    padding-left: 700px;
-}
-
-.pDos {
-    padding-right: 700px;
-} */
-
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -124,7 +100,6 @@ h3{
 
 #hijoUno {
     grid-area: pUno;
-    /* text-align: right; */
 }
 
 #hijoDos {
@@ -142,11 +117,13 @@ h3{
 
 
 
+
 /* Sobre ella */
 .sobreElla {
     margin-left: 100px;
     margin-right: 100px;
 }
+
 
 
 
@@ -232,12 +209,10 @@ ol li {
 
 
 /* Página de contacto */
-form { 
-    padding-right: 500px;
-    padding-left: 260px;
-    /* display: grid;
+form {
+    display: grid;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 }
 
 .pafContact {
