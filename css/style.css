@@ -9,9 +9,8 @@
 
 
 html {
-    font-family: Poppins, sans-serif;
+    font-family: Poppins, sans-serif; 
 }
-
 
 body {
     background-color: black;
@@ -25,31 +24,50 @@ main {
 header {
     background-color: #450100;
     height: 70px;
-    padding: 20px;
+    padding: 10px;
 }
 
 nav {
-    text-align: right;
+    text-align: right; 
 }
 
+
 ul li {
-    display: inline;
+    display: inline-flex;
     list-style: none;
     margin: 0 20px;
-    padding: 10px;
+    gap: 10px;
 }
+
 
 a {
     color: whitesmoke;
     text-decoration: none;
+    /* border: 10px solid #45010000; */
+    padding: 10px;
 }
 
-/* a:visited {
-    color:rgb(134, 133, 133)
-} */
 
 a:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    background-color: whitesmoke;
+    color: #661513;
+    /* color: black; */
+    padding: 10px ;
+    border-radius: 30px;
+    transition: 200ms;
+    /* transform: scale(1,1); */
+}
+
+a:active {
+    background-color: #450100;
+}
+
+.navbar {
+    margin: -10px;
+    background-color: #450100;
+    display: ;
+    align-items: right;
 }
 
 
@@ -61,6 +79,9 @@ a:hover {
   xl: 1140px,
   xxl: 1320px); */
  
+  @media (max-width: 720px) {
+    
+  }
 
 
 /* Títulos y texto */
@@ -85,17 +106,24 @@ h3{
 
 
 /* Home */
+.imgHome1 {
+    width: 300px;
+}
+
+.imgHome2 {
+    width: 300px;
+}
+
 .gridContainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 200px;
     grid-template-areas: 
     "imgHome1 imgHome1 pUno pUno pUno"
     "pDos pDos pDos imgHome2 imgHome2"
     ;
     gap: 20px;
     margin: 70px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #hijoUno {
@@ -103,7 +131,7 @@ h3{
 }
 
 #hijoDos {
-    grid-area: imgHome1
+    grid-area: imgHome1;
 }
 
 #hijoTres {
@@ -205,6 +233,13 @@ ol li {
     height: 300px;
 }
 
+#carouselExample {
+    width: 300px;
+    /* display: flex;
+    justify-self: center; */
+}
+
+
 
 
 
@@ -228,45 +263,26 @@ form {
     transition: 150ms;
 }
 
-input:active {
+input:hover {
     background-color: #661513;
-    /* transform: scale(0,95); */
+    /* transform: scale(1,1); */
 }
 
-input:hover {
-    box-shadow: 0 0 1rem  rgb(128, 124, 124)
+input:active {
+    box-shadow: 0 0 1rem  rgb(77, 73, 73)
 }
 
 
 
 
 /* Footer */ 
-#yt {
-    right: 40px;
-}
-
-#ig {
-    right: 100px;
-}
-
-#sfy {
-    right: 160px;
-}
-
-.imgFooter {
-    width: 50px;
-    margin-bottom: 40px;
-    margin-top: -35px;
-    position: absolute;
-    right: 50px;
-}
-
 .imgFooter1 {
     width: 50px;
     margin-bottom: 40px;
     margin-top: -35px;
     position: absolute;
     right: 50px;
+    cursor: pointer;
 }
 
 .imgFooter2 {
@@ -275,6 +291,7 @@ input:hover {
     margin-top: -35px;
     position: absolute;
     right: 110px;
+    cursor: pointer;
 }
 
 .imgFooter3 {
@@ -283,6 +300,7 @@ input:hover {
     margin-top: -35px;
     position: absolute;
     right: 170px;
+    cursor: pointer;
 }
 
 footer {
